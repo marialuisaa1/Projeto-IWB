@@ -17,16 +17,34 @@
     <!-- Fonts -->
 
     <!-- CSS Botstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"/>
-    <link href="https://cdn.jsdelivr.net/npm/aos@3.0.0-beta.6/dist/aos.css" rel="stylesheet" /> <!-- surgir na tela e os itens não ficarem estático -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-    <link href="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/css/glightbox.min.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/swiper@9.4.0/swiper-bundle.min.css" rel="stylesheet"/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@3.0.0-beta.6/dist/aos.css"
+      rel="stylesheet"
+    />
+    <!-- surgir na tela e os itens não ficarem estático -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiper@9.4.0/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
     <!--css main-->
 
-     <link rel="stylesheet" href="css/main.css"/>
-
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <header id="header" class="header">
@@ -63,12 +81,18 @@
               <li><a href="#services">Serviços</a></li>
               <li><a href="#departments">Departamentos</a></li>
               <li><a href="#doctors">Médicos</a></li>
-              <li class="dropdown"><a href="#"><span>Mais Opções</span> <i
-                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <li class="dropdown">
+                <a href="#"
+                  ><span>Mais Opções</span>
+                  <i class="bi bi-chevron-down toggle-dropdown"></i
+                ></a>
                 <ul>
                   <li><a href="#">Opção 1</a></li>
-                  <li class="dropdown"><a href="#"><span>Submenu</span> <i
-                        class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <li class="dropdown">
+                    <a href="#"
+                      ><span>Submenu</span>
+                      <i class="bi bi-chevron-down toggle-dropdown"></i
+                    ></a>
                     <ul>
                       <li><a href="#">Submenu 1</a></li>
                       <li><a href="#">Submenu 2</a></li>
@@ -85,19 +109,39 @@
               <li><a href="#contact">Contato</a></li>
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-            </nav>
-            <a href="" class="cta-btn">
-                Agende uma Consulta 
-            </a>
+          </nav>
+          <a href="" class="cta-btn"> Agende uma Consulta </a>
         </div>
       </div>
     </header>
     <!--fim header-->
-    <main>
-      <div>Título - Interface Web</div>
+    <main class="main">
+      <!--HERO section-->
+      <section id="hero" class="hero section">
+        <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000"
+        >
+
+        <!--Foto 1/slide 1-->
+
+        <div class="carousel-item active">
+          <img src="assets/img/hero-carousel/hero-carousel-1.jpg" alt="" />
+          <div class="container">
+            <h2>Bem vindo à "Sua Marca"</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos
+              assumenda ipsam illum, hic doloremque nam consequatur blanditiis
+              autem? In nulla aliquam quasi cumque incidunt animi suscipit
+              dignissimos eum asperiores sit.
+            </p>
+          </div>
+        </div>
+        <!--Fim Slide 1 -->
+      </section>
     </main>
+
     <footer>
-      <div>MRA Cell - 11 2345-6990</div>
-    </footer>   
+        <!-- Main JS -->
+     <script src="js/main.js"></script>
+    </footer>
   </body>
 </html>
