@@ -1,22 +1,19 @@
-<!-- https://github.com/guuhferiani/projeto-3 -->
-
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MRA Cell📱</title>
+    <title>Roots | PetSol 🐱</title>
 
     <meta name="description" content="" />
     <meta name="keywords" content="" />
 
     <!-- Favicons -->
-
     <link rel="icon" href="" />
 
     <!-- Fonts -->
 
-    <!-- CSS Botstrap -->
+    <!-- Boostrap CSS Files -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -29,7 +26,6 @@
       href="https://cdn.jsdelivr.net/npm/aos@3.0.0-beta.6/dist/aos.css"
       rel="stylesheet"
     />
-    <!-- surgir na tela e os itens não ficarem estático -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       rel="stylesheet"
@@ -42,10 +38,11 @@
       href="https://cdn.jsdelivr.net/npm/swiper@9.4.0/swiper-bundle.min.css"
       rel="stylesheet"
     />
-    <!--css main-->
 
+    <!-- CSS Main -->
     <link rel="stylesheet" href="css/main.css" />
   </head>
+
   <body>
     <header id="header" class="header">
       <div class="topbar d-flex align-items-center">
@@ -58,90 +55,144 @@
           </div>
 
           <div class="d-flex align-items-center">
-            <i class="bi bi-telephone-fill"></i>
-            Ligue agora: (11) 98769-8907
+            <i class="bi bi-phone"></i>
+            Ligue agora: (11) 98765 - 4321
           </div>
         </div>
         <!-- fim container -->
       </div>
       <!-- fim topbar -->
+
       <div class="branding d-flex align-items-center">
         <div
           class="container position-relative d-flex align-items-center justify-content-end"
         >
           <a href="" class="logo d-flex align-items-center me-auto">
-            <img src="./assets/img/logo.png" />
+            <img src="assets/img/logo.png" alt="" />
           </a>
 
-          <!-- MENU -->
+          <!-- Menu -->
           <nav id="navmenu" class="navmenu">
             <ul>
-              <li><a href="#hero" class="active">Home</a></li>
-              <li><a href="#about">Sobre</a></li>
-              <li><a href="#services">Serviços</a></li>
-              <li><a href="#departments">Departamentos</a></li>
-              <li><a href="#doctors">Médicos</a></li>
+              <li><a href="#hero" class="active"> Home </a></li>
+              <li><a href="#sobre"> Sobre </a></li>
+              <li><a href="#servicos"> Serviços </a></li>
+              <li><a href="#departamentos"> Departamentos </a></li>
+              <li><a href="#medicos"> Médicos </a></li>
+              <li><a href="#contato"> Contato </a></li>
               <li class="dropdown">
-                <a href="#"
-                  ><span>Mais Opções</span>
-                  <i class="bi bi-chevron-down toggle-dropdown"></i
-                ></a>
+                <a href="#">
+                  <span> Mais Opções </span>
+                  <i class="bi bi-chevron-down"> </i>
+                </a>
                 <ul>
-                  <li><a href="#">Opção 1</a></li>
+                  <li><a href="#"> Opção 1 </a></li>
+                  <li><a href="#"> Opção 2 </a></li>
                   <li class="dropdown">
-                    <a href="#"
-                      ><span>Submenu</span>
-                      <i class="bi bi-chevron-down toggle-dropdown"></i
-                    ></a>
+                    <a href="#">
+                      <span> Submenu </span>
+                      <i class="bi bi-chevron-down"> </i>
+                    </a>
+
                     <ul>
-                      <li><a href="#">Submenu 1</a></li>
-                      <li><a href="#">Submenu 2</a></li>
-                      <li><a href="#">Submenu 3</a></li>
-                      <li><a href="#">Submenu 4</a></li>
-                      <li><a href="#">Submenu 5</a></li>
+                      <li><a href="#"> Submenu 1 </a></li>
+                      <li><a href="#"> Submenu 2 </a></li>
                     </ul>
                   </li>
-                  <li><a href="#">Opção 2</a></li>
-                  <li><a href="#">Opção 3</a></li>
-                  <li><a href="#">Opção 4</a></li>
+                  <!-- fim Submenu -->
                 </ul>
               </li>
-              <li><a href="#contact">Contato</a></li>
+              <!-- Fim Mais Opções -->
             </ul>
-            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"> </i>
           </nav>
+
           <a href="" class="cta-btn"> Agende uma Consulta </a>
         </div>
+        <!-- fim container -->
       </div>
+      <!-- fim branding -->
     </header>
-    <!--fim header-->
+    <!-- fim header -->
+
     <main class="main">
-      <!--HERO section-->
+      <!-- HERO section -->
       <section id="hero" class="hero section">
-        <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000"
+        <div
+          id="hero-carousel"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+          data-bs-interval="5000"
         >
+          <!-- foto 1 / slide 1 -->
+          <div class="carousel-item active">
+            <img src="assets/img/hero-carousel/hero-carousel-1.jpg" alt="" />
 
-        <!--Foto 1/slide 1-->
-
-        <div class="carousel-item active">
-          <img src="assets/img/hero-carousel/hero-carousel-1.jpg" alt="" />
-          <div class="container">
-            <h2>Bem vindo à "Sua Marca"</h2>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos
-              assumenda ipsam illum, hic doloremque nam consequatur blanditiis
-              autem? In nulla aliquam quasi cumque incidunt animi suscipit
-              dignissimos eum asperiores sit.
-            </p>
+            <div class="container">
+              <h2>Bem-vindo à "Sua Marca"</h2>
+              <p>
+                Na Clínica Vida Plena, cuidamos da sua saúde com carinho e
+                dedicação. Nossa equipe de profissionais está preparada para
+                oferecer o melhor atendimento, com foco no bem-estar e na
+                qualidade de vida de nossos pacientes.
+              </p>
+            </div>
           </div>
+          <!-- Fim slide 1 -->
+
+          <!-- foto 2 / slide 2 -->
+          <div class="carousel-item">
+            <img src="assets/img/hero-carousel/hero-carousel-2.jpg" alt="" />
+
+            <div class="container">
+              <h2>Bem-vindo à "Sua Marca"</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni
+                praesentium tempora facilis expedita quis quasi ut, minus
+                sapiente, architecto assumenda tempore enim facere quas itaque
+                beatae nihil explicabo et doloribus!
+              </p>
+            </div>
+          </div>
+          <!-- Fim slide 2 -->
+
+          <!-- foto 3 / slide 3 -->
+          <div class="carousel-item">
+            <img src="assets/img/hero-carousel/hero-carousel-3.jpg" alt="" />
+
+            <div class="container">
+              <h2>Bem-vindo à "Sua Marca"</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                quas facilis expedita atque fugiat corrupti eligendi placeat
+                quae natus. Nulla quae illum autem quam voluptatum perspiciatis
+                esse modi sapiente facilis!
+              </p>
+            </div>
+          </div>
+          <!-- Fim slide 3 -->
+
+          <!-- Control prev-->
+          <a href="#hero-carrossel" class="carousel-control-prev" role="button" data-bs-slide="prev">
+            <i class="carrossel-control-prev-icon bi bi-chevron-left" arian-hidden="true"></i>
+          </a>
+          
+          <!--Control next-->
+          <a href="#hero-carrossel" class="carousel-control-next" role="button" data-bs-slide="next">
+            <i class="carrossel-control-next-icon bi bi-chevron-right"></i>
+          </a>
+          
         </div>
-        <!--Fim Slide 1 -->
+        <!-- hero-carousel -->
       </section>
     </main>
 
     <footer>
-        <!-- Main JS -->
-     <script src="js/main.js"></script>
+      <div></div>
     </footer>
+
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
   </body>
 </html>
