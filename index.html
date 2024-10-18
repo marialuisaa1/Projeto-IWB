@@ -3,15 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Roots | Cantinho dos Pets 🐱</title>
+    <title>Roots | PetSol 🐱</title>
 
     <meta name="description" content="" />
     <meta name="keywords" content="" />
 
     <!-- Favicons -->
-    <link rel="icon" href="" />
+    <link rel="icon" href="assets/img/favicon.ico" />
 
     <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Protest+Strike&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Boostrap CSS Files -->
     <link
@@ -51,7 +57,7 @@
         >
           <div class="d-none d-md-flex align-items-center">
             <i class="bi bi-clock"></i>
-            Segunda a Sábado, das 08h às 17h
+            Segunda a Sexta, das 13h às 17h
           </div>
 
           <div class="d-flex align-items-center">
@@ -75,8 +81,8 @@
           <nav id="navmenu" class="navmenu">
             <ul>
               <li><a href="#hero" class="active"> Home </a></li>
-              <li><a href="#sobre"> Sobre </a></li>
-              <li><a href="#servicos"> Serviços </a></li>
+              <li><a href="#about"> Sobre </a></li>
+              <li><a href="#services"> Serviços </a></li>
               <li><a href="#departamentos"> Departamentos </a></li>
               <li><a href="#medicos"> Médicos </a></li>
               <li><a href="#contato"> Contato </a></li>
@@ -108,7 +114,7 @@
             <i class="mobile-nav-toggle d-xl-none bi bi-list"> </i>
           </nav>
 
-          <a href="index.html#consultas" class="cta-btn">
+          <a href="index.html#consulta" class="cta-btn">
             Agende uma Consulta
           </a>
         </div>
@@ -120,12 +126,12 @@
 
     <main class="main">
       <!-- HERO section -->
-      <section id="hero" class="hero section scroll-top">
+      <section id="hero" class="hero section">
         <div
           id="hero-carousel"
           class="carousel slide carousel-fade"
           data-bs-ride="carousel"
-          data-bs-interval="1000"
+          data-bs-interval="9000"
         >
           <!-- foto 1 / slide 1 -->
           <div class="carousel-item active">
@@ -181,11 +187,11 @@
             role="button"
             data-bs-slide="prev"
           >
-            <i
+            <span
               class="carousel-control-prev-icon bi bi-chevron-left"
               aria-hidden="true"
             >
-            </i>
+            </span>
           </a>
 
           <!-- Control Next -->
@@ -195,18 +201,18 @@
             role="button"
             data-bs-slide="next"
           >
-            <i
+            <span
               class="carousel-control-next-icon bi bi-chevron-right"
               aria-hidden="true"
             >
-            </i>
+            </span>
           </a>
 
           <ol class="carousel-indicators"></ol>
         </div>
         <!-- hero-carousel -->
       </section>
-      <!-- fim do Hero -->
+      <!--  Fim Hero  -->
 
       <section id="featured-services" class="featured-services section">
         <div class="container">
@@ -223,14 +229,12 @@
                 </div>
 
                 <h4>
-                  <a href="" class="stretchad-link">Cardiologia</a>
+                  <a href="" class="stretched-link">Cardiologia </a>
                 </h4>
 
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolorum consequatur unde non! Praesentium doloremque excepturi
-                  accusantium sed mollitia quo vel dolorum nostrum? Iure quasi
-                  in officiis inventore tempore minima voluptates.
+                  Cuidados completos para a saúde do seu coração, incluindo
+                  exames e tratamentos especializados.
                 </p>
               </div>
             </div>
@@ -248,14 +252,12 @@
                 </div>
 
                 <h4>
-                  <a href="" class="stretchad-link">Farmácia</a>
+                  <a href="" class="stretched-link">Farmacia </a>
                 </h4>
 
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolorum consequatur unde non! Praesentium doloremque excepturi
-                  accusantium sed mollitia quo vel dolorum nostrum? Iure quasi
-                  in officiis inventore tempore minima voluptates.
+                  Medicamentos e orientações para garantir o uso correto e
+                  seguro de seus tratamentos.
                 </p>
               </div>
             </div>
@@ -273,14 +275,12 @@
                 </div>
 
                 <h4>
-                  <a href="" class="stretchad-link">Clínica Geral</a>
+                  <a href="" class="stretched-link">Clínica Geral </a>
                 </h4>
 
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolorum consequatur unde non! Praesentium doloremque excepturi
-                  accusantium sed mollitia quo vel dolorum nostrum? Iure quasi
-                  in officiis inventore tempore minima voluptates.
+                  Consultas de rotina e acompanhamento para prevenir e tratar
+                  diversas condições de saúde.
                 </p>
               </div>
             </div>
@@ -298,14 +298,12 @@
                 </div>
 
                 <h4>
-                  <a href="" class="stretchad-link">Genética</a>
+                  <a href="" class="stretched-link">Genética</a>
                 </h4>
 
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolorum consequatur unde non! Praesentium doloremque excepturi
-                  accusantium sed mollitia quo vel dolorum nostrum? Iure quasi
-                  in officiis inventore tempore minima voluptates.
+                  Exames genéticos para diagnóstico e prevenção de doenças
+                  hereditárias. E testes de paternidade
                 </p>
               </div>
             </div>
@@ -313,10 +311,11 @@
           </div>
           <!-- Fim row gy-4 -->
         </div>
-        <!-- Fim Container -->
+        <!-- fim container -->
       </section>
-      <!-- Fim Serviçps - Featured -->
+      <!-- Fim Serviços = Featured -->
 
+      <!-- atendimento Emergencia -->
       <section
         id="call-to-action"
         class="call-to-action section accent-background"
@@ -329,37 +328,36 @@
           >
             <div class="col-xl-10">
               <div class="text-center">
-                <h3>Emergência? Precisa de ajuda agoara?</h3>
+                <h3>Emergência? Precisa de ajuda agora?</h3>
+
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Itaque tempora quaerat, sequi in magnam assumenda cupiditate
-                  dolor ad maiores saepe nemo, magni animi, rem fuga atque est
-                  qui quod consectetur!
+                  Se você está enfrentando uma emergência médica ou precisa de
+                  atendimento imediato, nossa equipe está pronta para ajudar.
+                  Entre em contato conosco e receba o cuidado necessário o mais
+                  rápido possível.
                 </p>
 
-                <a class="ct-bnt" href="#consulta"> Agende uma Consulta </a>
+                <a class="cta-btn" href="#consulta"> Agende uma Consulta </a>
               </div>
             </div>
             <!-- COLUNA 10 -->
           </div>
-          <!-- Fim do  Row -->
+          <!-- Fim row -->
         </div>
-        <!-- Fim do Container -->
+        <!-- Fim container -->
       </section>
-      <!-- Fim Emergência -->
+      <!-- Fim Emergencia -->
 
       <!-- Sobre -->
-      <section id="sobre" class="sobre section">
+      <section id="about" class="about section">
+        <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
           <h2>Sobre Nós</h2>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
-            optio ducimus quisquam, corrupti quos aliquid reprehenderit
-            molestias! Eveniet veniam aspernatur eligendi, perferendis unde
-            ducimus, optio molestias sit distinctio repudiandae tempora.
+            Compromisso com sua saúde e bem-estar em todas as fases da vida.
           </p>
         </div>
-        <!-- Fim Section Title -->
+        <!--  Fim Section Title -->
 
         <div class="container">
           <div class="row gy-4">
@@ -371,10 +369,12 @@
               <img src="assets/img/about.jpg" alt="" class="img-fluid" />
 
               <a
-                href="https://www.youtube.com/watch?v=JDcvtKsSfxg"
+                href="https://www.youtube.com/watch?v=_fuimO6ErKI"
                 class="glightbox pulsating-play-btn"
-              ></a>
+              >
+              </a>
             </div>
+            <!-- Fim col-lg-6 -->
 
             <div
               class="col-lg-6 content"
@@ -382,74 +382,410 @@
               data-aos-delay="200"
             >
               <h3>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-                nihil omnis delectus maiores quo voluptas ad in molestiae,
-                libero est quaerat, eveniet quod explicabo sit laborum quibusdam
-                non a enim.
+                Excelência no cuidado à saúde, com dedicação e profissionalismo.
               </h3>
 
               <p class="fst-italic">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-                aperiam ipsum beatae fugit atque quod expedita consequuntur
-                explicabo non, voluptates quae rem enim excepturi iusto
-                obcaecati libero quam perspiciatis deleniti.
+                Na Clínica Vida Plena, nosso objetivo é promover a saúde e o
+                bem-estar de nossos pacientes, oferecendo atendimento humanizado
+                e tratamentos inovadores.
               </p>
+
               <ul>
                 <li>
                   <i class="bi bi-check2-all"></i>
-                  <span>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</span>
+                  <span
+                    >Equipe médica qualificada, sempre pronta para atender
+                    você.</span
+                  >
                 </li>
 
                 <li>
                   <i class="bi bi-check2-all"></i>
-                  <span>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</span>
+                  <span
+                    >Infraestrutura moderna e confortável para garantir o seu
+                    melhor cuidado.</span
+                  >
                 </li>
 
                 <li>
                   <i class="bi bi-check2-all"></i>
-                  <span>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</span>
+                  <span
+                    >Serviços abrangentes, desde consultas de rotina até
+                    tratamentos especializados.</span
+                  >
                 </li>
               </ul>
+
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Consequatur accusamus itaque, inventore quaerat temporibus
-                dolorum cumque vero optio assumenda soluta voluptatem sequi qui
-                sint omnis eaque dolore sed quos. Eum.
+                Estamos comprometidos em proporcionar a melhor experiência para
+                nossos pacientes, com atendimento personalizado, empatia e
+                respeito. Sua saúde é nossa prioridade!
               </p>
             </div>
-            <!--  Fim do Content -->
+            <!-- Fim content -->
           </div>
-          <!-- Fim row gy-4 -->
         </div>
-        <!-- Fim Container  -->
+        <!-- Fim container -->
       </section>
-      <!-- Fim do Sobre -->
+      <!-- Fim Sobre -->
 
       <!-- Status Section -->
-      <section id="stats" class="stats section"></section>
+      <section id="stats" class="stats section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4">
+            <!-- status 1 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="stats-item d-flex align-items-center w-100 h-100">
+                <i class="fas fa-user-md flex-shrink-0"> </i>
 
-      <!-- Features Section -->
-      <section id="Features" class="features section"></section>
-      <!-- Fim Características -->
+                <div>
+                  <span
+                    data-purecounter-start="0"
+                    data-purecounter-end="25"
+                    data-purecounter-duration="1"
+                    class="purecounter"
+                  ></span>
+                  <p>Médicos</p>
+                </div>
+              </div>
+            </div>
+            <!-- Fim status 1 -->
+
+            <!-- status 2 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="stats-item d-flex align-items-center w-100 h-100">
+                <i class="fas fa-flask flex-shrink-0"></i>
+                <div>
+                  <span
+                    data-purecounter-start="0"
+                    data-purecounter-end="8"
+                    data-purecounter-duration="1"
+                    class="purecounter"
+                  ></span>
+                  <p>Laboratórios de Pesquisa</p>
+                </div>
+              </div>
+            </div>
+            <!-- fim Status 2 -->
+
+            <!-- status 3 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="stats-item d-flex align-items-center w-100 h-100">
+                <i class="far fa-hospital flex-shrink-0"></i>
+                <div>
+                  <span
+                    data-purecounter-start="0"
+                    data-purecounter-end="15"
+                    data-purecounter-duration="1"
+                    class="purecounter"
+                  ></span>
+                  <p>Departamentos</p>
+                </div>
+              </div>
+            </div>
+            <!-- Fim Status 3 -->
+
+            <!-- status 4 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="stats-item d-flex align-items-center w-100 h-100">
+                <i class="fas fa-award flex-shrink-0"></i>
+                <div>
+                  <span
+                    data-purecounter-start="0"
+                    data-purecounter-end="150"
+                    data-purecounter-duration="1"
+                    class="purecounter"
+                  ></span>
+                  <p>Prêmios</p>
+                </div>
+              </div>
+            </div>
+            <!-- Fim status 4  -->
+          </div>
+          <!-- fim row -->
+        </div>
+        <!-- fim container -->
+      </section>
+
+      <!-- Características Section -->
+      <section id="features" class="features section">
+        <div class="container">
+          <div class="row justify-content-around gy-4">
+            <!-- Esta classe aplica um estilo flexbox que distribui as colunas ao longo da linha, com espaço igual ao redor delas. -->
+
+            <div
+              class="features-image col-lg-6"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <img src="assets/img/features.jpg" alt="" />
+            </div>
+
+            <div
+              class="col-lg-5 d-flex flex-column justify-content-center"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <h3>Excelência e cuidado em todos os aspectos da sua saúde</h3>
+
+              <p>
+                Nosso compromisso é proporcionar um atendimento humanizado e de
+                qualidade, sempre priorizando o bem-estar e a saúde de nossos
+                pacientes.
+              </p>
+
+              <div
+                class="icon-box d-flex position-relative"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <i class="fa-solid fa-hand-holding-medical flex-shrink-0"></i>
+                <div>
+                  <h4>
+                    <a href="" class="stretched-link">
+                      Atendimento Personalizado
+                    </a>
+                  </h4>
+
+                  <p>
+                    Garantimos um atendimento acolhedor e individualizado,
+                    respeitando as necessidades de cada paciente.
+                  </p>
+                </div>
+              </div>
+              <!-- fim icon box 1 -->
+
+              <div
+                class="icon-box d-flex position-relative"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <i class="fa-solid fa-suitcase-medical flex-shrink-0"></i>
+                <div>
+                  <h4>
+                    <a href="" class="stretched-link">
+                      Equipamentos Modernos
+                    </a>
+                  </h4>
+                  <p>
+                    Utilizamos tecnologia de ponta para oferecer diagnósticos
+                    precisos e tratamentos eficazes.
+                  </p>
+                </div>
+              </div>
+              <!-- Fim Icon Box 2 -->
+
+              <div
+                class="icon-box d-flex position-relative"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
+                <i class="fa-solid fa-staff-snake flex-shrink-0"></i>
+                <div>
+                  <h4>
+                    <a href="" class="stretched-link"
+                      >Profissionais Capacitados</a
+                    >
+                  </h4>
+                  <p>
+                    Contamos com uma equipe de especialistas dedicados e
+                    altamente qualificados para cuidar de você.
+                  </p>
+                </div>
+              </div>
+              <!-- Fim Icon Box 3 -->
+
+              <div
+                class="icon-box d-flex position-relative"
+                data-aos="fade-up"
+                data-aos-delay="600"
+              >
+                <i class="fa-solid fa-lungs flex-shrink-0"></i>
+                <div>
+                  <h4>
+                    <a href="" class="stretched-link"
+                      >Cuidados Multidisciplinares</a
+                    >
+                  </h4>
+                  <p>
+                    Oferecemos uma abordagem multidisciplinar, integrando
+                    diferentes áreas da saúde para o seu bem-estar completo.
+                  </p>
+                </div>
+              </div>
+              <!-- Fim Icon Box 4 -->
+            </div>
+            <!-- fim content around -->
+          </div>
+        </div>
+        <!-- fim container -->
+      </section>
+      <!-- Fim características -->
 
       <!-- Services Section -->
-      <section id="services" class="services section"></section>
+      <section id="services" class="services section">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Serviços</h2>
+          <p>
+            Oferecemos uma gama completa de serviços para garantir seu bem-estar
+            e saúde.Confie em nossos profissionais qualificados para cuidar de
+            você
+          </p>
+        </div>
+        <!-- Fim título -->
 
-      <!-- Consulta Section -->
+        <div class="container">
+          <div class="row gy-4">
+            <!-- Tópico 1 -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-item  position-relative">
+                <div class="icon">
+                  <i class="fas fa-heartbeat"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3>Cuidados Cardiológicos</h3>
+                </a>
+                <p>Oferecemos avaliações e tratamentos especializados para problemas cardíacos. Nossa equipe de cardiologistas está pronta para fornecer o melhor cuidado para a sua saúde cardíaca.</p>
+              </div>
+            </div><!-- Fim tópico 1 -->
+            <!-- Tópico 2 -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <i class="fas fa-pills"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3>Medicamentos e Terapias</h3>
+                </a>
+                <p>Oferecemos uma ampla gama de medicamentos e terapias personalizadas para tratar uma variedade de condições. Trabalhamos para garantir que você receba a medicação certa para sua condição específica.</p>
+              </div>
+            </div><!-- Fim tópico 2 -->
+
+            <!-- Tópico 3 -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <i class="fas fa-hospital-user"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3>Atendimento Hospitalar</h3>
+                </a>
+                <p>Nosso hospital oferece cuidados completos e especializados para uma variedade de necessidades médicas. Contamos com uma equipe experiente e tecnologia avançada para o melhor atendimento possível.</p>
+              </div>
+            </div><!-- Fim tópico 3 -->
+            <!-- Tópico 4 -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <i class="fas fa-dna"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3>Exames Genéticos</h3>
+                </a>
+                <p>Realizamos exames genéticos para ajudar na prevenção e diagnóstico precoce de doenças. Nossa equipe especializada está aqui para fornecer informações e suporte ao longo do processo.</p>
+                <a href="#" class="stretched-link"></a>
+              </div>
+            </div><!-- Fim tópico 4-->
+            <!-- Tópico 5 -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <i class="fas fa-wheelchair"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3>Reabilitação e Fisioterapia</h3>
+                </a>
+                <p>Oferecemos serviços de reabilitação e fisioterapia para ajudar na recuperação e melhoria da qualidade de vida. Nossos profissionais estão dedicados a ajudar você a atingir seus objetivos de saúde e bem-estar.</p>
+                <a href="#" class="stretched-link"></a>
+              </div>
+            </div><!-- Fim tópico 5-->
+            <!-- Tópico 6 -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <i class="fas fa-notes-medical"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3>Consultas e Diagnósticos</h3>
+                </a>
+                <p>Nossas consultas e diagnósticos abrangem uma variedade de especialidades médicas. Estamos aqui para fornecer um atendimento preciso e personalizado para suas necessidades de saúde.</p>
+                <a href="#" class="stretched-link"></a>''
+              </div>
+            </div><!-- Fim tópico 6 -->
+          <!-- fim row -->
+        </div>
+
+        <!-- fim container -->
+      </section>
+      <!-- fim serviços -->
+
+      <!-- consulta Section -->
       <section
-        id="consultas"
-        class="consultas section light-background"
-      ></section>
-      <!-- Fim Consulta -->
+        id="consulta" class="consulta section light-background">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Agende uma Consulta</h2>
+          <p>Preencha o formulário abaixo para agendar uma consulta com um de nossos profissionais. Estamos aqui para cuidar de você.</p>
+        </div><!-- Section Title -->
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+          <form action="" method="post" class="email-form">
+            <div class="row">
+              <div class="col-md-4 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Seu Nome" required="">
+              </div>
+              <div class="col-md-4 form-group mt-3 mt-md-0">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Seu Email" required="">
+              </div>
+              <div class="col-md-4 form-group mt-3 mt-md-0">
+                <input type="tel" class="form-control" name="phone" id="phone" placeholder="Seu Telefone" required="">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 form-group mt-3">
+                <input type="datetime-local" name="date" class="form-control datepicker" id="date"
+                  placeholder="Data e Hora da Consulta" required="">
+              </div>
+              <div class="col-md-4 form-group mt-3">
+                <select name="department" id="department" class="form-select" required="">
+                  <option value="">Selecione o Departamento</option>
+                  <option value="Department 1">Cardiologia</option>
+                  <option value="Department 2">Pediatria</option>
+                  <option value="Department 3">Neurologia</option>
+                </select>
+              </div>
+              <div class="col-md-4 form-group mt-3">
+                <select name="doctor" id="doctor" class="form-select" required="">
+                  <option value="">Selecione o(a) Médico(a)</option>
+                  <option value="Doctor 1">Dr. Silva</option>
+                  <option value="Doctor 2">Dra. Oliveira</option>
+                  <option value="Doctor 3">Dra. Costa</option>
+                </select>
+              </div>
+            </div><!-- Fim Row -->
+  
+            <div class="form-group mt-3">
+              <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
+            </div>
+            <div class="mt-3">
+
+              <div class="text-center"><button type="submit">Agendar Consulta</button></div>
+            </div>
+          </form>
+            
+          </div><!-- Fim container -->
+  
+      </section>
+      <!-- Fim consulta  -->
 
       <!-- Tabs Section -->
       <section id="tabs" class="tabs section"></section>
       <!-- Fim tabs -->
 
-      <!--  Doctors Section -->
+      <!-- Doctors Section -->
       <section id="medicos" class="medicos section light-background"></section>
 
-      <!--  Planos / Preços Section   -->
+      <!-- Planos / Preços Section -->
       <section id="pricing" class="pricing section"></section>
 
       <!-- Faq Section -->
@@ -457,12 +793,12 @@
       <!-- Fim FAQ -->
 
       <!-- Contato Section -->
-      <section id="conato" class="contato section"></section>
+      <section id="contato" class="contato section"></section>
     </main>
 
     <footer id="footer" class="footer light-background"></footer>
 
-    <!-- Botão voltar ao TOPO = Scroll-Top -->
+    <!-- Botao voltar ao TOPO = Scroll-Top -->
     <a
       href="#"
       id="scroll-top"
