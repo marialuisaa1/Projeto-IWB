@@ -369,7 +369,7 @@ font-weight: 700;
   justify-content: center;
 } 
 
-.hero .carousel-indicators {
+.hero .carousel-indicators li{
   cursor: pointer;
   background: #444;
   width: 12px;
@@ -381,9 +381,9 @@ font-weight: 700;
   transition: 0.3s;
 }
 
-.hero .carousel-indicators.active  {
+.hero .carousel-indicators li.active  {
   opacity: 1;
-  background: red;
+  background: #00cdcd;
 }
 
 @media (max-height:500px), 
@@ -707,15 +707,18 @@ section,
 }
 
 .features h3 {
-  font-size: 28px; 
+  font-size: 28px;
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
+  color: #2293a0;
+  /* font-family:  ;  opcional */
 }
+
 .features h3:after {
   content: "";
-  background: #00b0c4;
+  background: #01d2e9;
   position: absolute;
   display: block;
   width: 50px;
@@ -723,13 +726,14 @@ section,
   left: 0;
   bottom: 0;
 }
+
 .features .icon-box {
   margin-top: 50px;
 }
 
 .features .icon-box i {
   color: #00cdcd;
-  background-color: whitesmoke;
+  background: whitesmoke;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -738,8 +742,8 @@ section,
   width: 56px;
   height: 56px;
   border-radius: 4px;
-  line-height: 0;
-  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.1);
+  line-height: 5;
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.3);
   transition: 0.3s;
 }
 
@@ -747,6 +751,7 @@ section,
   background-color: #00cdcd;
   color: whitesmoke;
 }
+
 .features .icon-box h4 {
   font-weight: 700;
   margin-bottom: 10px;
@@ -755,27 +760,32 @@ section,
 
 .features .icon-box h4 a {
   color: #13b6bc;
-  transition: 0.3s
-
+  transition: 0.3s;
 }
+
 .features .icon-box h4 a:hover {
   color: #0d8084;
 }
+
 .features .icon-box p {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
 }
+
+/* # Services Section */
+
 .services .service-item {
   text-align: center;
   padding: 20px;
   transition: all ease-in-out 0.3s;
   height: 100%;
 }
+
 .services .service-item .icon {
-  background-color: whitesmoke;
-  color: #3fbbc0 ;
-  margin: 0 auto;
+  background: whitesmoke;
+  color: #3fbbc0;
+  margin: auto;
   width: 80px;
   height: 80px;
   border-radius: 50px;
@@ -783,11 +793,11 @@ section,
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
-  transition: 0.3s;
   font-size: 32px;
   transition: ease-in-out 0.3s;
   box-shadow: 0px 0 25px rgba(0, 0, 0, 0.3);
 }
+
 .services .service-item h3 {
   font-weight: 700;
   margin-bottom: 15px;
@@ -796,7 +806,11 @@ section,
   transition: 0.3s;
   position: relative;
   color: #272727;
+  /* 
+  font-family: ; 
+   */
 }
+
 .services .service-item h3:after {
   content: "";
   position: absolute;
@@ -807,49 +821,59 @@ section,
   bottom: 0;
   left: calc(50% - 25px);
 }
+
 .services .service-item p {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
 }
+
 .services .service-item:hover .icon {
-  box-shadow: 0px 0 40px rgba(11, 171, 234, 0.8);
+  box-shadow: 0px 0 40px rgba(11, 171, 234, 0.6);
 }
+
 .services .service-item:hover h3 {
   color: #2293a0;
 }
 
-/*forms */
+/* Consulta // Forms  */
 
 .consulta .email-form {
   width: 100%;
 }
 
-.consulta .email-form .form-group {
+.consulta .email-form .form-group { 
   padding-bottom: 8px;
+
 }
 
 .consulta .email-form input,
 .consulta .email-form textarea,
 .consulta .email-form select {
   color: #017e8c;
-  background-color: whitesmoke;
+  background: whitesmoke;
+  /* border-color: ; */
+  /* border-radius: 0; */
   box-shadow: none;
   font-size: 14px;
   padding: 10px !important;
 }
+
 .consulta .email-form input::placeholder,
 .consulta .email-form textarea::placeholder,
 .consulta .email-form select::placeholder {
   color: color-mix(in srgb, #0c7a7d, transparent 50%);
+  /* color: red; */
 }
+
+/* Quando o Input for selecionado */
 .consulta .email-form input:focus,
 .consulta .email-form textarea:focus,
 .consulta .email-form select:focus {
   border-color: #00cdcd;
 }
 
-.consulta .email-form input,
+.consulta .email-form input, 
 .consulta .email-form select {
   height: 44px;
 }
@@ -857,16 +881,103 @@ section,
 .consulta .email-form textarea {
   padding: 10px 12px;
 }
+
 .consulta .email-form button {
   background: #00a2b4;
   color: whitesmoke;
   border: 0;
-  padding:10px 35px;
+  padding: 10px 35px;
   font-size: 20px;
-  transition:0.4s;
+  transition: 0.4s;
   border-radius: 6px;
 }
-.consulta .email-form button[type=submit] {
+
+.consulta .email-form button:hover {
   background: #4bbac6;
+  /* color: ; */
 }
 
+/*  FAQ  */
+
+.faq .faq-container .faq-item {
+  background: #ccc;
+  position: relative;
+  padding: 20px;
+  margin-bottom: 15px;
+  /* border: ; */
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.faq .faq-container .faq-item h3 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  margin: 0 30px 0 0;
+  transition: 0.3s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.faq .faq-container .faq-item h3:hover {
+  color: #00b0c4;
+}
+
+.faq .faq-container .faq-item .faq-content {
+  display: grid;
+  transition: 0.3s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.faq .faq-container .faq-item .faq-content p {
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+.faq .faq-container .faq-item .faq-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 22px;
+  line-height: 0;
+  transition: 0.3s;
+  cursor: pointer;
+  color: #38d4d4;
+}
+
+.faq .faq-container .faq-item .faq-toggle:hover {
+  color: red;
+}
+
+.faq .faq-container .faq-active {
+  border-color: black;
+}
+
+.faq .faq-container .faq-active .faq-content {
+  visibility: visible;
+  opacity: 1;
+  padding-top: 10px;
+}
+
+.faq .faq-container .faq-active .faq-toggle {
+  transform: rotate(90deg);
+  color: #01d2e9;
+}
+@media (max-height: 500px),
+(max-width:580px){
+  .hero.carousel{
+    min-height: 100vh;
+  }
+}
+@media(max-width:768){
+  .hero .h2{
+    font-size: 30px;
+  }
+} 
+@media(min-width:640px){
+  .hero .carousel-control-next{
+    padding-right: 15px;
+  }
+}
