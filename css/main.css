@@ -369,7 +369,7 @@ font-weight: 700;
   justify-content: center;
 } 
 
-.hero .carousel-indicators li{
+.hero .carousel-indicators li {
   cursor: pointer;
   background: #444;
   width: 12px;
@@ -383,7 +383,7 @@ font-weight: 700;
 
 .hero .carousel-indicators li.active  {
   opacity: 1;
-  background: #00cdcd;
+  background: red;
 }
 
 @media (max-height:500px), 
@@ -513,32 +513,32 @@ section,
   margin-bottom: 0;
 }
 
-/* ---- About  ----- */
-.about .content h3 {
+/* ---- Sobre  ----- */
+.sobre .content h3 {
   font-size: 1.75rem;
   /* Multiplicar *16 ou Dividir /16 */
   font-weight: 700;
   color: #2293a0;
 }
 
-.about .content ul {
+.sobre .content ul {
   list-style: none;
   padding: 0;
 }
 
-.about .content ul li {
+.sobre .content ul li {
   padding: 10px 0 0 0;
   display: flex;
 }
 
-.about .content ul i {
+.sobre .content ul i {
   color: #00b0c4;
   margin-right: 0.5rem;
   line-height: 1.2;
   font-size: 1.25rem;
 }
 
-.about .pulsating-play-btn {
+.sobre .pulsating-play-btn {
   position: absolute;
   left: calc(50% - 47px);
   top: calc(50% - 47px);
@@ -712,13 +712,12 @@ section,
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #2293a0;
-  /* font-family:  ;  opcional */
+  color: #444;
 }
 
 .features h3:after {
   content: "";
-  background: #01d2e9;
+  background: #00b0c4;
   position: absolute;
   display: block;
   width: 50px;
@@ -733,7 +732,7 @@ section,
 
 .features .icon-box i {
   color: #00cdcd;
-  background: whitesmoke;
+  background-color: whitesmoke;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -742,10 +741,11 @@ section,
   width: 56px;
   height: 56px;
   border-radius: 4px;
-  line-height: 5;
-  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.3);
+  line-height: 0;
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
 }
+
 
 .features .icon-box:hover i {
   background-color: #00cdcd;
@@ -783,9 +783,9 @@ section,
 }
 
 .services .service-item .icon {
-  background: whitesmoke;
+  background-color: whitesmoke;
   color: #3fbbc0;
-  margin: auto;
+  margin: 0 auto;
   width: 80px;
   height: 80px;
   border-radius: 50px;
@@ -793,9 +793,10 @@ section,
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
+  transition: 0.3s;
   font-size: 32px;
   transition: ease-in-out 0.3s;
-  box-shadow: 0px 0 25px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0 25px rgba(0, 0, 0, 0.1);
 }
 
 .services .service-item h3 {
@@ -806,9 +807,6 @@ section,
   transition: 0.3s;
   position: relative;
   color: #272727;
-  /* 
-  font-family: ; 
-   */
 }
 
 .services .service-item h3:after {
@@ -817,7 +815,7 @@ section,
   display: block;
   width: 50px;
   height: 2px;
-  background: #00cdcd;
+  background: #00b0c4;
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -829,30 +827,29 @@ section,
 }
 
 .services .service-item:hover .icon {
-  box-shadow: 0px 0 40px rgba(11, 171, 234, 0.6);
+  box-shadow: 0px 0 40px rgba(11, 171, 234, 0.8);
 }
 
 .services .service-item:hover h3 {
   color: #2293a0;
 }
 
-/* Consulta // Forms  */
+/* Consulta // Form */
 
 .consulta .email-form {
   width: 100%;
 }
 
-.consulta .email-form .form-group { 
+.consulta .email-form .form-group {
   padding-bottom: 8px;
-
 }
 
 .consulta .email-form input,
 .consulta .email-form textarea,
 .consulta .email-form select {
-  color: #017e8c;
+  color: #00b0c4;
   background: whitesmoke;
-  /* border-color: ; */
+ /*  border-color: ; */
   /* border-radius: 0; */
   box-shadow: none;
   font-size: 14px;
@@ -863,55 +860,118 @@ section,
 .consulta .email-form textarea::placeholder,
 .consulta .email-form select::placeholder {
   color: color-mix(in srgb, #0c7a7d, transparent 50%);
-  /* color: red; */
 }
 
-/* Quando o Input for selecionado */
+/* Quando o Input for Selecionado */
 .consulta .email-form input:focus,
 .consulta .email-form textarea:focus,
 .consulta .email-form select:focus {
   border-color: #00cdcd;
 }
 
-.consulta .email-form input, 
+.consulta .email-form input,
 .consulta .email-form select {
   height: 44px;
 }
 
 .consulta .email-form textarea {
-  padding: 10px 12px;
+  padding: 55px;
 }
 
 .consulta .email-form button {
   background: #00a2b4;
-  color: whitesmoke;
-  border: 0;
-  padding: 10px 35px;
-  font-size: 20px;
-  transition: 0.4s;
-  border-radius: 6px;
+ color: whitesmoke;
+ border: 0;
+ padding: 10px 35px;
+ font-size: 20px;
+ transition: 0.4s;
+ border-radius: 0px;
 }
 
-.consulta .email-form button:hover {
-  background: #4bbac6;
-  /* color: ; */
+.consulta .email-form button[type=submit]:hover {
+  background: #4bbac6
+}
+.doctors .team-member {
+  background-color: #efefef;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  height: 100%;
 }
 
-/*  FAQ  */
+.doctors .team-member .member-img {
+  position: relative;
+  overflow: hidden;
+}
+.doctors .team-member .social {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  right: 0;
+  opacity: 0;
+  transition: ease-in-out 0.3s;
+  text-align: center;
+  }
+  .doctors .team-member .social a {
+    background: whitesmoke;
+    color: black;
+    margin: 0 3px;
+    border-radius: 4px;
+    width: 36px;
+    height: 36px;
+    transition: ease-in-out 0.3s;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .doctors .team-member .social a:hover {
+    color: #fff;
+    background: #01d2e9;
+  }
+  .doctors .team-member .social i {
+    font-size: 18px;
+    line-height: 0;
+  }
+  
+  .doctors .team-member .member-info {
+    padding: 25px 15px;
+  }
+  
+  .doctors .team-member .member-info h4 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+  
+  .doctors .team-member .member-info span {
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
 
+  }
+  
+  .doctors .team-member:hover .social {
+    opacity: 1;
+    bottom: 15px;
+  }
+  
+  
+
+
+/* FAQ */
 .faq .faq-container .faq-item {
-  background: #ccc;
+  background-color: #ccc;
   position: relative;
   padding: 20px;
   margin-bottom: 15px;
-  /* border: ; */
+  /* border: ); */
   border-radius: 5px;
   overflow: hidden;
 }
 
 .faq .faq-container .faq-item h3 {
   font-weight: 600;
-  font-size: 22px;
+  font-size: 16px;
   line-height: 24px;
   margin: 0 30px 0 0;
   transition: 0.3s;
@@ -920,8 +980,9 @@ section,
   align-items: center;
 }
 
+
 .faq .faq-container .faq-item h3:hover {
-  color: #00b0c4;
+  color: #00b0c4
 }
 
 .faq .faq-container .faq-item .faq-content {
@@ -940,15 +1001,15 @@ section,
   position: absolute;
   top: 20px;
   right: 20px;
-  font-size: 22px;
+  font-size: 16px;
   line-height: 0;
   transition: 0.3s;
   cursor: pointer;
-  color: #38d4d4;
+  color: black;
 }
 
 .faq .faq-container .faq-item .faq-toggle:hover {
-  color: red;
+  color: #13b6bc;
 }
 
 .faq .faq-container .faq-active {
@@ -965,19 +1026,62 @@ section,
   transform: rotate(90deg);
   color: #01d2e9;
 }
-@media (max-height: 500px),
-(max-width:580px){
-  .hero.carousel{
+
+.contato .info-item {
+  background-color: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding: 24px 0 30px 0;
+}
+.contato .info-item i {
+  color: #0d8084;
+  width: 56px;
+  height: 56px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50%;
+  border: 2px dotted #0d8084;
+}
+.contato .info-item h3 {
+  font-size: 20px;
+  color: #383838;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.contato .info-item p {
+  padding: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+
+/* Resposivos  */
+
+@media (max-height: 500px), 
+(max-width: 580px) {
+  .hero .carousel {
     min-height: 100vh;
   }
 }
-@media(max-width:768){
-  .hero .h2{
+
+@media (max-width: 768px) {
+  .hero h2 {
     font-size: 30px;
   }
-} 
-@media(min-width:640px){
-  .hero .carousel-control-next{
-    padding-right: 15px;
+}
+
+@media (min-width: 640px) {
+  .hero .carousel-control-prev {
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 640px) {
+  .hero .carousel-control-next {
+    padding-left: 15px;
   }
 }
